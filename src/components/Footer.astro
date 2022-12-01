@@ -1,0 +1,131 @@
+---
+import Social from './Social.astro';
+---
+
+<style>
+  footer {
+     @apply grid grid-cols-4 p-16 text-base text-sky-700 
+  }
+  footer > div {
+     @apply flex flex-col justify-start items-center
+  }
+  footer > div:nth-child(3) {
+     @apply items-start
+  }
+  #last {
+     @apply items-start  justify-between
+  }
+  ul {
+     @apply list-disc mb-5
+  }
+  li {
+    list-style-type: ">";
+    text-indent:0.3rem;
+    line-height:2rem;
+    margin-left: 0.6rem;
+  }
+  strong {
+    @apply inline-block
+  }
+</style>
+
+    <footer id="footer" >
+      <a href="index.php">
+        <img src="/img/logo-blue.svg" alt="logo" />
+      </a>
+  
+      <div>
+        <div>
+        <h5>Our Company</h5>
+        <ul>
+          <li>
+            <a href="about-us">About us</a>
+          </li>
+          <li>
+            <a href="our-management">Our Management</a>
+          </li>
+          <li>
+            <a href="our-brand-story">Our Brand Story</a>
+          </li>
+          <li>
+            <a href="our-purpose">Our Purpose</a>
+          </li>
+          <li>
+            <a href="our-vision">Our Vision</a>
+          </li>
+          <li>
+            <a href="our-mission">Our Mission</a>
+          </li>
+          <li>
+            <a href="contact-us">Contact Us</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+  
+      <div>
+        <div>
+          <h5>Our Business Activity</h5>
+          <ul>
+            <li>
+              <a href="research-development">Research and Development</a>
+            </li>
+            <li>
+              <a href="innovation-achievements">Innovation Achievements</a>
+            </li>
+            <li>
+              <a href="our-associates">Our Associates</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5>Industries</h5>
+          <ul>
+            <li>
+              <a href="food-and-beverages-flavours"
+                >Food and Beverages Flavours</a
+              >
+            </li>
+            <li>
+              <a href="natural-extracts">Natural Extracts</a>
+            </li>
+            <li>
+              <a href="natural-colours">Natural Colours</a>
+            </li>
+            <li>
+              <a href="food-ingredients">Food Ingredients</a>
+            </li>
+            <li>
+              <a href="nutritional-ingredients">Nutritional Ingredients</a>
+            </li>
+            <li>
+              <a href="food-service">Food Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <div id="last">
+        <div>
+          <strong>Address:</strong> The Kendall, #05-04/06, 50 Science Park Road
+          Science Park II, Singapore 117406
+        </div>
+  
+        <div>
+          <div><strong>Phone:</strong>   <a href="tel:65 6993 3194">warlbor+65 6993 3194</a></div>
+          <div><strong>Email:</strong>   <a target="_blank" href="mailto:warlbor@hbflavor.com">warlbor@hbflavor.com</a>  
+          </div>
+        </div>
+  
+        <div>
+          <h5>Business Hours</h5>
+          <div><strong>Monday - Friday:</strong>  9:00 AM to 6:00 PM</div>
+          <div><strong>Saturday - Sunday:</strong> Closed</div>
+        </div>
+  
+        <socials></socials>
+      </div>
+  
+    </footer>
+  
+ 

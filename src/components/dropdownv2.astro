@@ -1,0 +1,68 @@
+
+<script setup lang="ts">
+import IconArrowDown from "~icons/ic/sharp-keyboard-arrow-down";
+
+</script>
+
+<template>
+  <div class="p-10">
+    <div class="dropdown">
+      <a>
+        <h5>  Our Company</h5>
+         <icon-arrow-down />
+        <!-- <svg
+          class="fill-current h-4 w-4"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+          />
+        </svg> -->
+      </a>
+      <ul>
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three is the magic number</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<style lang="postcss" scoped>
+body {
+  @apply bg-dark-400;
+}
+.dropdown {
+  @apply inline-block relative;
+  & > a {
+    @apply text-sky-700
+          font-semibold
+          py-2
+          px-4
+          inline-flex
+          items-center;
+  }
+  & ul {
+    @apply absolute top-10 hidden  bg-white text-gray-700 ;
+    li:hover{
+      @apply text-light-700 bg-sky-700;
+    }
+    li {
+      @apply  py-2
+              px-4
+              whitespace-nowrap;
+    }
+  }
+}
+.dropdown:hover ul {
+  @apply block;
+}
+
+</style>

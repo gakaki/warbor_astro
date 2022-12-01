@@ -1,0 +1,23 @@
+---
+
+const image_types = [  "avif", "webp"];
+const test_url    = "https://res.cloudinary.com/demo/image/upload/nice_beach"
+
+const {src} = Astro.props;
+// console.log(src)
+--- 
+
+<picture>
+  {
+    image_types.map( (image_type) => 
+    <source  type={"image/" +  image_type}
+    srcset={`${test_url}/${src}.${image_type}`}
+    >
+  )}
+
+  <!-- fallback -->
+  {image_types.map( (type) => 
+    <img alt="Hut in the snow" src={test_url + src} >
+  )}
+
+</picture>

@@ -1,0 +1,124 @@
+
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+
+const image_src = ref("")
+
+const image_support = async() => {
+  const format_metas = [
+    {
+      "name" : "jxl",
+      "data" : "data:image/jxl;base64,/woIELASCAgQAFwASxLFgkWAHL0xqnCBCV0qDp901Te/5QM=",
+    },
+    {
+      "name" : "avif",
+      "data" : "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=",
+    },
+    {
+      "name" : "webp",
+      "data" : "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA",
+    },
+  ]
+
+  const key_not_support_formats = 'not_support_formats'
+  window[key_not_support_formats] = new Set();
+
+  function add_image_load( format_meta ) {
+   
+    return new Promise((resolve, reject) => {
+        //  console.log(window[key_not_support_formats].size); //always return 0
+        if ( window[key_not_support_formats].has(format_meta.name) ){
+          console.log( "found not support format_meta", format_meta);
+          reject(format_meta);
+        }
+
+        let img = new Image()
+        img.onload = () =>  { 
+          resolve(format_meta)
+        }
+        img.onerror = ()=>  { 
+          window[key_not_support_formats].add(format_meta.name)
+          // console.log("not supported format ",format_meta.name,window[key_not_support_formats])
+          reject(format_meta) 
+        } 
+        img.src = format_meta['data'];
+    })
+  }
+  async function detect(){
+    const time_start = new Date();//no usage
+    try{
+      // for (let i = 0; i < format_metas.length; i++) {
+      //     // await add_image_load(format_metas[i]).then((fm) => {
+      //     //     console.log(`第${i}张图片src:${fm}`)
+      //     // }).catch((err)=>{
+      //     //     console.log(`第${i}张图片:${err}`)
+      //     // }1`)
+      //   await add_image_load(format_metas[i]);
+      // }
+
+      //using promise all will Uncaught (in promise) {n try catch
+      //Promise.allSettled will not trigger catch
+      const res = await Promise.all( //no catch 
+        // format_metas.map(async (format_meta) => {
+        //   // there return is resolve value
+        //   return await add_image_load(format_meta);
+        // })
+        format_metas.map((format_meta) =>  add_image_load(format_meta) )
+      )
+    //   console.log("total finished",res)
+
+    }catch(err){
+      // console.log("error load",err)
+    }
+    finally{
+      // will be error not found time start because finally not found variable
+    //   const time_end = new Date();
+    //   const difference = (time_end - time_start) / 1000;
+      // console.log("You waited: " + difference + " seconds");
+      // console.log("not support",window[key_not_support_formats])
+    }
+  }
+
+  async function batch_test(){
+    console.time("100images");
+    // await Promise.all(
+    //       Array.from(Array(20).keys()).map(async () => {
+    //         return await detect();
+    //       })
+    // )
+    // promise all need waited
+    await Promise.all(
+    Array.from(Array(20).keys()).map( () =>  detect() )
+    )
+    console.timeEnd("100images"); //256ms~131ms
+  }
+   
+  async function main(){
+    const time_start = new Date();
+    await detect();
+    const test_url = `https://res.cloudinary.com/demo/image/upload/nice_beach`
+    for(let row of format_metas){
+        if ( window[key_not_support_formats].has(row.name) ){
+            image_src.value = test_url;
+        }else{
+            const extension = `.${row.name}` 
+            image_src.value = `${test_url}${extension}`;
+            break;
+        }
+    }
+    const difference = (new Date() - time_start);
+    console.log("You waited: " + difference + " ms");
+  }
+    
+  await main();
+}
+
+
+onMounted( async() => {
+  await image_support();
+})
+</script>
+
+<template>
+  <img :src="image_src" />
+</template>
