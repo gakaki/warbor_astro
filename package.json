@@ -4,11 +4,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "pnpm astro dev",
-    "start": "pnpm astro dev",
-    "build": "pnpm astro build",
-    "preview": "pnpm astro preview",
-    "astro": "pnpm astro"
+    "dev": "npx astro dev",
+    "start": "npx astro dev",
+    "build": "npx astro build",
+    "preview": "npx astro preview",
+    "astro": "npx astro"
   },
   "dependencies": {
     "@astrojs/preact": "^1.2.0",
