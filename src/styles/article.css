@@ -12,21 +12,23 @@ article .title{
 article .paragraphs {
     @apply 
         font-mono
+        text-xl
     ;
 }
+article .paragraphs h2,
 article .paragraphs h3 {
     @apply 
+       text-3xl
        my-5
-       pr-72
-       indent-8;
+       pr-72;
     ;
 }
+
+article .paragraphs ul,
 article .paragraphs p {
-    
     @apply 
         indent-8
-        text-xl
-        leading-8
+        leading-9
         my-5
         pr-72;
 }
