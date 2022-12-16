@@ -30,7 +30,13 @@ article .paragraphs p {
         indent-8
         leading-9
         my-5
-        pr-72;
+        pr-52;
+}
+article .paragraphs li{
+    @apply 
+    whitespace-nowrap    
+    flex-nowrap
+    ;
 }
 article .paragraphs a{
     @apply text-sky-700;

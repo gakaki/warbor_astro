@@ -1,35 +1,41 @@
 ---
-
-
+import ImageTag from '../components/ImageTag.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LinkPDF from '../components/LinkPDF.astro';
+const pageTitle = "Natural Colours";
 ---
-  <div>
+<BaseLayout pageTitle={pageTitle}>
 
-    <div id="top_banner">
+<img src="/img/natural-colours.jpg"  class="" />
 
-    </div>
+<article class="">
 
-    <div id="page_content">
-        
-       <div class="row  box-row aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-6 col-md-12 flavour-text-col">
-               <p>With a magical portfolio of <strong>Turmeric extract, Beta carotene, Red Beet, Spirulina, Black carrot, Elderberry extract, Lutein and Rosemary extract, State of the analytical capability with equipment like UPLC-Q-TOF-MS, HPLC-VWD,HPLC-FLD,GPC,X series 2ICP-MS, GC/Q-TOF, HS-GC,FLOWSYS and IC available in abundance in our labs.</strong></p>
+	<h2 class="title">{pageTitle}</h2>
 
-               <p>Certified as FSC22000, ISO220000, ISO 9001, BRC, Kosher and Halal certificates</p>
+   
+	<div class="paragraphs">
 
-               <p>Warlbor is fast emerging as the one stop solution for micro-emulsion, micro encapsulation, blending and premix applications from testing to regulatory procedures</p>
+      <p>With a magical portfolio of <strong>Turmeric extract, Beta carotene, Red Beet, Spirulina, Black carrot, Elderberry extract, Lutein and Rosemary extract, State of the analytical capability with equipment like UPLC-Q-TOF-MS, HPLC-VWD,HPLC-FLD,GPC,X series 2ICP-MS, GC/Q-TOF, HS-GC,FLOWSYS and IC available in abundance in our labs.</strong></p>
 
-               <p>Inspired by tradition, transfer of in-depth technology knowledge and industrial solution to its clients </p>
+      <p>Certified as FSC22000, ISO220000, ISO 9001, BRC, Kosher and Halal certificates</p>
 
-               <p>Supported with a global production site built with an investment of US $35 million</p>
-               
-               <p> <img src="https://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png" alt="Text Book" /><a href="https://www.warlbor.com/assets/attachment/Designed Brochure -Natural Colours.pdf" target="_blank" class="container">Flavor your life with natural colours </a> </p>
-               
-            </div>
-            <div class="col-lg-6 col-md-12 flavour-img-col">
-               <img src="/img/natural-color-collage.jpg">
-            </div>
-         </div>
-      
-    </div>
+      <p>Warlbor is fast emerging as the one stop solution for micro-emulsion, micro encapsulation, blending and premix applications from testing to regulatory procedures</p>
 
-  </div>
+      <p>Inspired by tradition, transfer of in-depth technology knowledge and industrial solution to its clients </p>
+
+      <p>Supported with a global production site built with an investment of US $35 million</p>
+
+      <LinkPDF 
+        text="Flavor your life with natural colours " 
+        link="https://www.warlbor.com/assets/attachment/Designed Brochure -Natural Colours.pdf" 
+      />
+
+      <img src="/img/natural-color-collage.jpg" />
+
+	</div>
+	
+</article>
+
+</BaseLayout>
+
+

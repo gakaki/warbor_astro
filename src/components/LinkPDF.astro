@@ -1,0 +1,23 @@
+---
+const { link,text } = Astro.props;
+---
+<div class="flex 
+		space-x-2 
+		place-content-start 
+		place-items-center
+		my-5
+		">
+
+        <img src="https://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png" 
+        alt="{text}" />
+
+        <a href="{link}" 
+            target="_blank"  >
+            {text}
+        </a>
+
+</div>
+
+<style>
+
+</style>

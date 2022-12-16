@@ -1,61 +1,68 @@
 ---
-
-
+import ImageTag from '../components/ImageTag.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LinkPDF from '../components/LinkPDF.astro';
+const pageTitle = "Food Service";
 ---
-  <div>
+<BaseLayout pageTitle={pageTitle}>
 
-    <div id="top_banner">
+<img src="/img/our-company.jpg"  class="" />
 
-    </div>
+<article class="">
 
-    <div id="page_content">
-        
-			<div class="row  box-row  food-service-row aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-				<div class="col-lg-6 col-md-12 flavour-text-col">
-					<div>
-						<p>Warlbor’s exclusive- “from food for food and authentic taste”, with a very robust collection that’s second to none in the food service sector.</p>
-						<div class="col-50">
-							<h4>Portfolios</h4>
-							<ul>
-								<li>Sauce</li>
-								<li>Concentrate soup</li>
-								<li>Burst beads</li>
-								<li>Fruit/coffee/tea based jellies</li>
-								<li>Dried fruits</li>
-								<li>Fruit jams</li>
-							</ul>
-						</div>
-						<div class="col-50">
-							<h4>Applications</h4>
-							<ul>
-								<li>Processed meat</li>
-								<li>Snack</li>
-								<li>Instant noodle</li>
-								<li>Home meal replacement</li>
-								<li>Sauce</li>
-								<li>Seasoning</li>
-								<li>Condiment</li>
-								<li>Bakery</li>
-								<li>Coffee</li>
-								<li>Tea</li>
-							</ul>
-						</div>
-						<!--div class ="col-50">
-                <h4>Product form</h4>
-                <ul>
-                    <li>Powder</li>
-                    <li>Liquid</li>
-                    <li>Paste</li>
-                </ul>
-                </div-->
-                
-                <p> <img src="https://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png" alt="Text Book" /><a href="https://www.warlbor.com/assets/attachment/Designed Brochure - YiFang Food Service Solutions.pdf" target="_blank" class="container">Flavor your life with food service solutions </a> </p>
-                
-                </div>
-				</div>
-				<div class="col-lg-6 col-md-12 flavour-img-col"> <img src="/img/food-service-collapse.jpg"> </div>
+	<h2 class="title">{pageTitle}</h2>
+
+	<!-- <div class="row  box-row  food-service-row aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> -->
+
+
+	<div class="paragraphs">
+
+		<p>Warlbor’s exclusive- “from food for food and authentic taste”, with a very robust collection that’s second to none in the food service sector.</p>
+
+		<div class="flex w-3/4 justify-start">
+
+			<div class="">
+				<h3>Portfolios</h3>
+				<ul>
+					<li>Sauce</li>
+					<li>Concentrate soup</li>
+					<li>Burst beads</li>
+					<li>Fruit/coffee/tea based jellies</li>
+					<li>Dried fruits</li>
+					<li>Fruit jams</li>
+				</ul>
 			</div>
-		
-    </div>
 
-  </div>
+			<div class="">
+				<h3>Applications</h3>
+				<ul>
+					<li>Processed meat</li>
+					<li>Snack</li>
+					<li>Instant noodle</li>
+					<li>Home meal replacement</li>
+					<li>Sauce</li>
+					<li>Seasoning</li>
+					<li>Condiment</li>
+					<li>Bakery</li>
+					<li>Coffee</li>
+					<li>Tea</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+
+		<LinkPDF 
+		text="Flavor your life with food service solutions " 
+		link="https://www.warlbor.com/assets/attachment/Designed Brochure - YiFang Food Service Solutions.pdf" 
+		/>
+		
+
+		<img src="/img/food-service-collapse.jpg" />
+
+	</div>
+	
+</article>
+
+</BaseLayout>
+
