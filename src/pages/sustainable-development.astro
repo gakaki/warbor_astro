@@ -1,18 +1,22 @@
 ---
-
-
+import ImageTag from '../components/ImageTag.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Sustainable Development";
 ---
-  <div>
+<BaseLayout pageTitle={pageTitle}>
 
-    <div class="relative">
-      <NimgSourcetype src="img/sustainable-development.jpg"></NimgSourcetype>
-      <h1 class="absolute left-15 bottom-1">
-        Sustainable Development
-      </h1>
+<img src="/img/sustainable-development.jpg"  class="" />
+
+<article class="">
+
+    <h2 class="title">{pageTitle}</h2>
+
+    <div class="paragraphs">
+
+      <p>With sustainable development in mind, Warlbor Asia Pacific Pte Ltd, recognizes and accepts its social and moral responsibilities as a “global citizen”, and treats economic, ecological and social responsibilities as equally important business objectives. Here we find the balance between economic development, environmental protection and social progress, treats people with respect, and enables all stakeholders to enjoy benefits. By practicing environment protection throughout every project, Warlbor brings the principle of sustainable development to daily work.</p>
+
     </div>
+    
+</article>
 
-    <div class="article">
-       <p>With sustainable development in mind, Warlbor Asia Pacific Pte Ltd, recognizes and accepts its social and moral responsibilities as a “global citizen”, and treats economic, ecological and social responsibilities as equally important business objectives. Here we find the balance between economic development, environmental protection and social progress, treats people with respect, and enables all stakeholders to enjoy benefits. By practicing environment protection throughout every project, Warlbor brings the principle of sustainable development to daily work.</p>
-    </div>
-
-  </div>
+</BaseLayout>

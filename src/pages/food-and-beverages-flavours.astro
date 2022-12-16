@@ -24,3 +24,49 @@
     </div>
 
   </div>
+
+
+
+  ---
+import ImageTag from '../components/ImageTag.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const h2Title   = "Research Development";
+const pageTitle = "Warlbor" + h2Title;
+---
+<BaseLayout pageTitle={pageTitle}>
+
+<img src="/img/research.jpg"  class="" />
+
+<article class="">
+
+    <h2 class="title">{h2Title}</h2>
+
+    <div class="paragraphs">
+
+      <p>Dedicated Technological Innovation and Development through Global R&D Platform.</p>
+      <p>Warlbor global innovation centre for food and beverages is an integrated multidisciplinary research and development centre leveraging the research ecosystem to enable collaboration and growth of businesses.</p>
+      <p>Warlbor Asia Pacific Pte Ltd, is fast emerging as a regional hub for expansion in the Southeast Asian and World markets.</p>
+      <p>With already established international specialized technology R&D and testing centres in China, Germany and many other countries-
+          <br>
+      Like the National Enterprise Technology Centre, Provincial and Municipal Enterprise Technology Centres, Engineering Technology Centres and R&D centres in Shanghai, Yunnan, Guangdong, Fujian and other regions.</p>
+      <p>Gaining from Huabao’s R&D credentials, Warlbor is here to change the food and beverage flavours landscape by helping businesses world over to be available with solutions for their services. With extensive research capabilities insightful industry knowledge and inspiration from 169 patents of Huabao, Warlbor’s team of flavour scientists is here to work closely with you.</p>
+      <p>Warlbor’s lineage lies in the following programs being run in association with the parent company.
+       
+      <h2>
+          State-recognized Technical Centre</h2>
+      <ul>
+          <li>The Post-Doctoral Research Station</li>
+          <li>The Ministry of Science and Technology of China National 863 Project</li>
+          <li>China Torch Program</li>
+          <li>Tobacco Innovation and Technology Joint Key Laboratory</li>
+          <li>Post-doctoral mobile research station for food science and engineering at Jiangnan University</li>
+          <li>Joint graduate students training base.</li>
+      </ul>
+      
+
+    </div>
+    
+</article>
+
+</BaseLayout>
+

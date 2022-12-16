@@ -32,3 +32,6 @@ article .paragraphs p {
         my-5
         pr-72;
 }
+article .paragraphs a{
+    @apply text-sky-700;
+}
