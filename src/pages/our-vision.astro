@@ -1,14 +1,16 @@
----    
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Warlbor Our Vision";
+---
+<BaseLayout pageTitle={pageTitle}>
 
+<img src="/img/our-vision.jpg"  class="" />
 
-<div id="top_banner">
+<article class="">
 
-</div>
-
-<div id="page_content">
+    <h2 class="title">Flavour your life, make it unique every day.</h2>
     
-        <h3 class="bold-heading">Flavour your life, make it unique every day.</h3>
+    <div class="paragraphs">
 
         <p>Helping customers to do things instead of just putting things together.</p>
 
@@ -16,6 +18,9 @@
         <p>It is fast becoming the destination for flavours, where the taste as a result of what we do appeals to ones’ discerning senses and comes across as a unique signature delivery, distinct from others.</p>
         <p>Flavours from Warlbor Asia Pacific Pte Ltd are so much about simple luxuries that one might miss in our everyday. Time to spend with friends and family being in closer contact with oneself, restoring balance, pursuing personal desires being in touch with things that are elemental, be it water, the smell of morning dew, forest or full original flavours of authentic food.</p>
         <p>A destination that has all the essence of becoming a journey of one’s conscience to maintain a relationship with people, work, and the experiences they love.</p>
+     
+    </div>
     
-</div>
+</article>
 
+</BaseLayout>

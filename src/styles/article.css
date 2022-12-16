@@ -14,9 +14,17 @@ article .paragraphs {
         font-mono
     ;
 }
-
-article .paragraphs p {
+article .paragraphs h3 {
     @apply 
+       my-5
+       pr-72
+       indent-8;
+    ;
+}
+article .paragraphs p {
+    
+    @apply 
+        indent-8
         text-xl
         leading-8
         my-5

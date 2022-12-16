@@ -5,4 +5,8 @@
 
 social link in footer
 
-our management picture jpg
+Our Mission picture jpg
+
+about us  image tag
+
+contact us lost ask dongping

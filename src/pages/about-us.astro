@@ -1,70 +1,79 @@
 ---
 import ImageTag from '../components/ImageTag.astro';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Warlbor Our Mission";
 ---
+<BaseLayout pageTitle={pageTitle}>
 
-<div class="article_title">
-  <ImageTag src="img/our-company.jpg" />
-  <h1>About Us</h1>
-</div>
+<img src="/img/our-company.jpg"  class="" />
+<!-- <ImageTag src="img/our-company.jpg" /> -->
 
-<div class="article">
-  <h3>
-    Warlbor Asia Pacific Pte Ltd is all set to emulate its parent Huabao
-    Flavours and Fragrances as a leading international flavour production
-    set-up, and be among the best in class in terms of sales.
-  </h3>
+<article class="">
 
-  <p>
-    Huabao Flavours and Fragrances Co. Ltd. was founded in 1996 and indexed as
-    China's A-shares listed company (300741.SZ) in 1996, with leading business
-    interests in R&D, manufacturing and sales of flavours and fragrances for
-    tobacco, food & beverage and personal care, aroma raw materials, tobacco
-    raw materials and ingredients along with RTL, expanded stems and
-    innovative tobacco materials and condiments. Motivated by the consumers'
-    demand, as centric to the technological innovations, Huabao maintains,
-    “Concentric Diversification” and over the period has differentiated as
-    specialised multi-national conglomerate energised by the global mission of
-    “Green, Nutritious, and Healthy.” Huabao has been at the forefront in
-    flavouring your life with innovative thinking and prospective technology.
-  </p>
+    <h2 class="title">About Us</h2>
 
-  <p>
-    Huabao Flavours and Fragrances in its endeavour to help achieve better
-    life with unique offerings, presents Warlbor Asia Pacific Pte Ltd, as
-    Huabao's regional hub for further expansion in the Southeast Asian Market
-    and rest of the world. Warlbor celebrates the corporate spirit of
-    “innovation, pragmatism , loyalty and collaboration”. Integrating domestic
-    and foreign scientific research resources with a global vision to deliver
-    products system solutions and comprehensive technical services for
-    customers.
-  </p>
+    <div class="paragraphs">
 
-  <p>
-    Further in line with its global delivery, Huabao has set up innovation R&D
-    centres in Holzminden, Germany and Singapore. In China, Huabao owns the
-    only “National Enterprise Technology Centre”, the postdoctoral program,
-    and has set up several provincial and municipal enterprise technology
-    centres in Guangdong Province, Yunnan Province and Fujian Province.
-  </p>
+      <h3>
+        Warlbor Asia Pacific Pte Ltd is all set to emulate its parent Huabao
+        Flavours and Fragrances as a leading international flavour production
+        set-up, and be among the best in class in terms of sales.
+      </h3>
 
-  <p>
-    22% of Huabao's employees are research scientists promulgating tens and
-    thousands of favour formulations.
-  </p>
+      <p>
+        Huabao Flavours and Fragrances Co. Ltd. was founded in 1996 and indexed as
+        China's A-shares listed company (300741.SZ) in 1996, with leading business
+        interests in R&D, manufacturing and sales of flavours and fragrances for
+        tobacco, food & beverage and personal care, aroma raw materials, tobacco
+        raw materials and ingredients along with RTL, expanded stems and
+        innovative tobacco materials and condiments. Motivated by the consumers'
+        demand, as centric to the technological innovations, Huabao maintains,
+        “Concentric Diversification” and over the period has differentiated as
+        specialised multi-national conglomerate energised by the global mission of
+        “Green, Nutritious, and Healthy.” Huabao has been at the forefront in
+        flavouring your life with innovative thinking and prospective technology.
+      </p>
+    
+      <p>
+        Huabao Flavours and Fragrances in its endeavour to help achieve better
+        life with unique offerings, presents Warlbor Asia Pacific Pte Ltd, as
+        Huabao's regional hub for further expansion in the Southeast Asian Market
+        and rest of the world. Warlbor celebrates the corporate spirit of
+        “innovation, pragmatism , loyalty and collaboration”. Integrating domestic
+        and foreign scientific research resources with a global vision to deliver
+        products system solutions and comprehensive technical services for
+        customers.
+      </p>
+    
+      <p>
+        Further in line with its global delivery, Huabao has set up innovation R&D
+        centres in Holzminden, Germany and Singapore. In China, Huabao owns the
+        only “National Enterprise Technology Centre”, the postdoctoral program,
+        and has set up several provincial and municipal enterprise technology
+        centres in Guangdong Province, Yunnan Province and Fujian Province.
+      </p>
+    
+      <p>
+        22% of Huabao's employees are research scientists promulgating tens and
+        thousands of favour formulations.
+      </p>
+    
+      <p>
+        Huabao, having passed on to Warlbor Asia Pacific Pte Ltd its rich legacy,
+        is pleased to share with Warlbor Asia Pacific Pte Ltd, the 169 patents and
+        the best practice of committing the 7% of the average annual operating
+        revenue to invest in research and development.
+      </p>
+    
+      <p>
+        Coming from the house of well-known flavour brands, such as Huabao, H&K,
+        Tianhong, HEDON, Hua Fang, Owada and Amber, Warlbor is all set to provide
+        customers with comprehensive, one-stop solutions for flavours and food
+        ingredients.
+      </p>
+    </div>
+    
+</article>
 
-  <p>
-    Huabao, having passed on to Warlbor Asia Pacific Pte Ltd its rich legacy,
-    is pleased to share with Warlbor Asia Pacific Pte Ltd, the 169 patents and
-    the best practice of committing the 7% of the average annual operating
-    revenue to invest in research and development.
-  </p>
-
-  <p>
-    Coming from the house of well-known flavour brands, such as Huabao, H&K,
-    Tianhong, HEDON, Hua Fang, Owada and Amber, Warlbor is all set to provide
-    customers with comprehensive, one-stop solutions for flavours and food
-    ingredients.
-  </p>
-</div>
+</BaseLayout>
 
