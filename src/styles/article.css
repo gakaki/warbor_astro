@@ -1,0 +1,22 @@
+article {
+    @apply p-10
+    ;
+}
+article .title{
+    @apply 
+    font-semibold 
+    text-4xl
+    text-sky-700 
+    ;
+}
+article .paragraphs {
+    @apply 
+        font-mono
+    ;
+}
+
+article .paragraphs p {
+    @apply 
+        my-5
+    ;
+}
