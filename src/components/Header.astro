@@ -1,8 +1,109 @@
 ---
 // import Hamburger from "./Hamburger.astro";
 // import IconArrowDown from "~icons/ic/sharp-keyboard-arrow-down";
-
 ---
+
+
+<header id="header">
+
+  <a id="header_logo" href="/" class="flex items-center mt-4">
+    <img src="/img/logo/logo-blue.svg" alt="logo" />
+  </a>
+
+  <div class="menu">
+    
+    <div class="dropdown">
+      <a href="/"> <h5>Home</h5></a>
+    </div>
+
+    <div class="dropdown">
+      <a
+        ><h5>Company<icon-arrow-down /></h5
+      ></a>
+      <ul>
+        
+        <li>
+          <a href="our-management">Management</a>
+        </li>
+        <li>
+          <a href="our-brand-story">Brand Story</a>
+        </li>
+        <li>
+          <a href="our-purpose">Purpose</a>
+        </li>
+        <li>
+          <a href="our-vision">Vision</a>
+        </li>
+        <li>
+          <a href="our-mission">Mission</a>
+        </li>
+
+        <li>
+          <a href="about-us">About</a>
+        </li>
+
+        <!-- <li>
+          <a href="contact-us">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <a
+        ><h5>Business Activity <icon-arrow-down /></h5
+      ></a>
+      <ul>
+        <li>
+          <a href="research-development">Research and Development</a>
+        </li>
+        <li>
+          <a href="innovation-achievements">Innovation Achievements</a>
+        </li>
+        <li>
+          <a href="our-associates">Associates</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <a
+        ><h5>Industries <icon-arrow-down /></h5
+      ></a>
+      <ul>
+        <li>
+          <a href="food-and-beverages-flavours">Flavours</a>
+        </li>
+        <li>
+          <a href="natural-extracts">Natural Extracts</a>
+        </li>
+        <li>
+          <a href="natural-colours">Natural Colours</a>
+        </li>
+        <li>
+          <a href="food-ingredients">Food Ingredients</a>
+        </li>
+        <li>
+          <a href="nutritional-ingredients">Nutritional Ingredients</a>
+        </li>
+        <li>
+          <a href="food-service">Food Service</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <a href="/sustainable-development"> <h5>Sustainable Development</h5></a>
+    </div>
+
+    <div class="dropdown">
+      <a href="/careers"> <h5>Careers</h5></a>
+    </div>
+
+  </div>
+  <!-- <a href="/search">Search</a> -->
+</header>
+  
+ 
 <style>
 
   header {
@@ -82,106 +183,4 @@
   .menu .dropdown:hover ul {
     @apply block;
   }
-  </style>
-
-
-    <header id="header">
-
-      <a id="header_logo" href="/" class="flex items-center mt-4">
-        <img src="/img/logo/logo-blue.svg" alt="logo" />
-      </a>
-  
-      <div class="menu">
-        
-        <div class="dropdown">
-         <a href="/"> <h5>Home</h5></a>
-        </div>
-
-        <div class="dropdown">
-          <a
-            ><h5>Company<icon-arrow-down /></h5
-          ></a>
-          <ul>
-            
-            <li>
-              <a href="our-management">Management</a>
-            </li>
-            <li>
-              <a href="our-brand-story">Brand Story</a>
-            </li>
-            <li>
-              <a href="our-purpose">Purpose</a>
-            </li>
-            <li>
-              <a href="our-vision">Vision</a>
-            </li>
-            <li>
-              <a href="our-mission">Mission</a>
-            </li>
-
-            <li>
-              <a href="about-us">About</a>
-            </li>
-
-            <!-- <li>
-              <a href="contact-us">Contact</a>
-            </li> -->
-          </ul>
-        </div>
-  
-        <div class="dropdown">
-          <a
-            ><h5>Business Activity <icon-arrow-down /></h5
-          ></a>
-          <ul>
-            <li>
-              <a href="research-development">Research and Development</a>
-            </li>
-            <li>
-              <a href="innovation-achievements">Innovation Achievements</a>
-            </li>
-            <li>
-              <a href="our-associates">Associates</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="dropdown">
-          <a
-            ><h5>Industries <icon-arrow-down /></h5
-          ></a>
-          <ul>
-            <li>
-              <a href="food-and-beverages-flavours">Flavours</a>
-            </li>
-            <li>
-              <a href="natural-extracts">Natural Extracts</a>
-            </li>
-            <li>
-              <a href="natural-colours">Natural Colours</a>
-            </li>
-            <li>
-              <a href="food-ingredients">Food Ingredients</a>
-            </li>
-            <li>
-              <a href="nutritional-ingredients">Nutritional Ingredients</a>
-            </li>
-            <li>
-              <a href="food-service">Food Service</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="dropdown">
-          <a href="/sustainable-development"> <h5>Sustainable Development</h5></a>
-        </div>
-
-        <div class="dropdown">
-         <a href="/careers"> <h5>Careers</h5></a>
-        </div>
-
-      </div>
-      <!-- <a href="/search">Search</a> -->
-    </header>
-  
- 
+</style>
