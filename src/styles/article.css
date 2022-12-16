@@ -4,7 +4,7 @@ article {
 }
 article .title{
     @apply 
-    font-semibold 
+    font-sans 
     text-4xl
     text-sky-700 
     ;
@@ -17,6 +17,8 @@ article .paragraphs {
 
 article .paragraphs p {
     @apply 
+        text-xl
+        leading-8
         my-5
-    ;
+        pr-72;
 }
