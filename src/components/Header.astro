@@ -18,25 +18,25 @@
     place-items-center 
     /* place-self-center */
     
-    absolute 
     z-40 
+    mb-5
     bg-white 
     bg-opacity-50;
-    
   }
-  header > a {
+
+  header #header_logo {
     @apply flex mx-10 w-80;
   }
-  div.menu {
+
+  .menu {
     @apply flex h-3 pl-4 space-x-3
       text-sky-700;
-      
   }
   
-  .dropdown {
+  .menu  .dropdown {
     @apply inline-block relative text-sky-700 ;
   }
-  .dropdown > a {
+  .menu  .dropdown > a {
       @apply font-semibold
             text-lg 
             px-4
@@ -44,7 +44,7 @@
             inline-flex
             items-center;
   }
-  .dropdown > ul {
+  .menu .dropdown > ul {
     @apply 
     subpixel-antialiased 
     px-1
@@ -61,31 +61,32 @@
     bg-white
     ;
   }
-  .dropdown  li {
+  .menu  .dropdown  li {
     @apply 
     cursor-pointer
     whitespace-nowrap;
   }
-  .dropdown li a {
+  .menu .dropdown li a {
     @apply 
     py-2 
     px-5
     block ;
   }
 
-  .dropdown a:visited {
+  .menu .dropdown a:visited {
     @apply bg-gray-100 rounded;
   }
-  .dropdown a:hover  {
+  .menu .dropdown a:hover  {
     @apply bg-gray-100 rounded;
   }
-  .dropdown:hover ul {
+  .menu .dropdown:hover ul {
     @apply block;
   }
   </style>
 
 
     <header id="header">
+
       <a id="header_logo" href="/" class="flex items-center mt-4">
         <img src="/img/logo/logo-blue.svg" alt="logo" />
       </a>
