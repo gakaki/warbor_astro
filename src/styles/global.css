@@ -1,5 +1,4 @@
-html {
-  background-color: #f1f5f9;
+/* html {
   font-family: sans-serif;
 }
 
@@ -19,8 +18,6 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
-
-/* nav styles */
 
 .hamburger {
   padding-right: 20px;
@@ -89,4 +86,4 @@ a:focus {
 
 .dark .nav-links a {
   color: #fff;
-}
+} */

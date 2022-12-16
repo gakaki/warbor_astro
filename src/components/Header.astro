@@ -4,44 +4,80 @@
 
 ---
 <style>
+
   header {
-    @apply w-full max-w-full flex absolute z-40 bg-white bg-opacity-50;
+    @apply 
+    w-full 
+    max-w-full 
+    flex 
+    /* justify-center */
+    /* justify-items-center */
+    /* content-center
+    items-center
+    self-center*/
+    place-items-center 
+    /* place-self-center */
+    
+    absolute 
+    z-40 
+    bg-white 
+    bg-opacity-50;
+    
   }
   header > a {
     @apply flex mx-10 w-80;
   }
   div.menu {
-    @apply flex pl-4 space-x-3
-      text-sky-700 
-      items-center h-3;
+    @apply flex h-3 pl-4 space-x-3
+      text-sky-700;
+      
   }
   
   .dropdown {
-    @apply inline-block relative text-sky-700;
-    & > a {
+    @apply inline-block relative text-sky-700 ;
+  }
+  .dropdown > a {
       @apply font-semibold
-            py-2
+            text-lg 
             px-4
+            py-2
             inline-flex
             items-center;
-    }
-    & ul {
-      @apply subpixel-antialiased text-lg z-40 absolute top-10 hidden  bg-white;
-      li {
-        @apply py-2 
-                px-4
-                whitespace-nowrap;
-        a {
-          @applay inline-block;
-        }
-      }
-      li:hover {
-        @apply bg-sky-700 block;
-      }
-      li:hover a {
-        /* @apply text-light-300; */
-      }
-    }
+  }
+  .dropdown > ul {
+    @apply 
+    subpixel-antialiased 
+    px-1
+    py-1
+    shadow-2xl
+    rounded
+    border 
+    text-lg 
+    z-40 
+    absolute 
+    top-10 
+    -left-2
+    hidden
+    bg-white
+    ;
+  }
+  .dropdown  li {
+    @apply 
+    cursor-pointer
+    whitespace-nowrap;
+  }
+  .dropdown li a {
+    @apply 
+    py-2 
+    px-5
+    block ;
+  }
+
+  .dropdown a:visited {
+    @apply bg-gray-100 rounded;
+  }
+  .dropdown a:hover  {
+    @apply bg-gray-100 rounded;
   }
   .dropdown:hover ul {
     @apply block;
@@ -51,44 +87,50 @@
 
     <header id="header">
       <a id="header_logo" href="/" class="flex items-center">
-        <img src="/img/logo-blue.svg" alt="logo" />
+        <img src="/img/logo/logo-blue.svg" alt="logo" />
       </a>
   
       <div class="menu">
-        <h5><a href="/">Home</a></h5>
-  
+        
+        <div class="dropdown">
+         <a href="/"> <h5>Home</h5></a>
+        </div>
+
         <div class="dropdown">
           <a
-            ><h5>Our Company <icon-arrow-down /></h5
+            ><h5>Company<icon-arrow-down /></h5
           ></a>
           <ul>
+            
             <li>
-              <a href="about-us">About us</a>
+              <a href="our-management">Management</a>
             </li>
             <li>
-              <a href="our-management">Our Management</a>
+              <a href="our-brand-story">Brand Story</a>
             </li>
             <li>
-              <a href="our-brand-story">Our Brand Story</a>
+              <a href="our-purpose">Purpose</a>
             </li>
             <li>
-              <a href="our-purpose">Our Purpose</a>
+              <a href="our-vision">Vision</a>
             </li>
             <li>
-              <a href="our-vision">Our Vision</a>
+              <a href="our-mission">Mission</a>
             </li>
+
             <li>
-              <a href="our-mission">Our Mission</a>
+              <a href="about-us">About</a>
             </li>
+
             <li>
-              <a href="contact-us">Contact Us</a>
+              <a href="contact-us">Contact</a>
             </li>
           </ul>
         </div>
   
         <div class="dropdown">
           <a
-            ><h5>Our Business Activity <icon-arrow-down /></h5
+            ><h5>Business Activity <icon-arrow-down /></h5
           ></a>
           <ul>
             <li>
@@ -98,7 +140,7 @@
               <a href="innovation-achievements">Innovation Achievements</a>
             </li>
             <li>
-              <a href="our-associates">Our Associates</a>
+              <a href="our-associates">Associates</a>
             </li>
           </ul>
         </div>
@@ -129,8 +171,14 @@
           </ul>
         </div>
   
-        <h5><a href="/sustainable-development">Sustainable Development</a></h5>
-        <h5><a href="/careers">Careers</a></h5>
+        <div class="dropdown">
+          <a href="/sustainable-development"> <h5>Sustainable Development</h5></a>
+        </div>
+
+        <div class="dropdown">
+         <a href="/careers"> <h5>Careers</h5></a>
+        </div>
+
       </div>
       <!-- <a href="/search">Search</a> -->
     </header>
