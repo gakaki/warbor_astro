@@ -13,10 +13,12 @@ const pageTitle = "Our Management";
     <div class="paragraphs">
         
         <div class="img_text">
+            
+            <div class="image">
+                <img src="img/xiaoqin.jpg" alt="" />
+            </div>
 
-            <img src="img/xiaoqin.jpg" alt="" />
-
-            <div>
+            <div class="text">
                 <p>
                 Huabao Flavour & Fragrance Co., Ltd chose to expand its flavour capability across ASEAN market. Our Singapore site – Warlbor Asia Pacific Pte Ltd represents Huabao’s largest global investment and it functions aligned with corporate vision – Flavor Your Life.
                 Singapore was chosen as the site of new innovation center due to its diversity at the heart of Southeast Asia with strong ambitious for the future of food & beverage. 
@@ -31,9 +33,10 @@ const pageTitle = "Our Management";
         </div>
 
         <div class="img_text">
-            <img src="img/dong.jpg" alt="" />
-
-            <div>
+            <div class="image">
+                <img src="img/dong.jpg" alt="" />
+            </div>
+            <div class="text">
                     <p>
                 Warlbor Asia Pacific is set up as a regional hub in Asia Pacific showcasing the comprehensive capabilities from flavour creation to consumer insight. Guided by Flavor your life – Warlbor APAC strives to provide best in class industrial solutions across food and beverage categories for our respective customers. 
 Singapore - as our first flavour innovation centre overseas representing the geographic and talent advantages for Warlbor APAC to build and strengthen its offerings from complexities to intensities. Warlbor APAC will be a financial success with a strong social conscious which carries greater credibility with peers, potentially influencing actions of other businesses. 
@@ -58,26 +61,30 @@ Singapore - as our first flavour innovation centre overseas representing the geo
         h-1/4
         ;
     }
-    .img_text img{
+    .img_text .image{
         @apply
         w-1/2;
     }
-    .img_text div{
+    .img_text  img{
+        min-width: 670px;
+    }
+    .img_text .text{
+        min-width: 670px;
         background-color: #291264;
         @apply
         text-white
-        w-1/2
+        /* w-1/2 */
         px-6
-        py-3
+        pt-14
         ;
     }
-    .img_text div p{
+    .img_text .text p{
         @apply
         leading-10
         pr-3
         ;
     }
-    .img_text div h4{
+    .img_text .text h4{
         @apply
         leading-9
         ;
