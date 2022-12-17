@@ -2,25 +2,88 @@
 import Social from './Social.astro';
 ---
 
+
+<footer id="footer" >
+
+  <div id="logo">
+    <a href="/">
+      <img src="/img/logo/logo-blue.svg" alt="logo" />
+    </a>
+    <Social></Social>
+  </div>
+  
+  <div class="address">
+    <div>
+      <strong>Warlbor Asia Pacific Pte. Ltd.</strong> 
+      <p>
+        The Kendall, #05-04/06, 50 Science Park Road
+        Science Park II, Singapore 117406
+      </p>
+    </div>
+
+    <div class="address2">
+      <strong>PT. Warlbor Flavour And Ingredients Indonesia </strong> 
+      <p>
+        Kawasan Industri Tunas Kabil Type 5-E 
+      Kelurahan Kabil, Kecamatan Nongsa 
+      Kota Batam – Kepulauan Riau
+      </p>
+    </div>
+  </div>
+  
+  <div class="contact">
+    <div>
+      <p>
+        <strong>Phone:</strong>   <a href="tel:65 6993 3194">warlbor+65 6993 3194</a>
+      </p>
+      <p>
+        <strong>Email:</strong>   <a target="_blank" href="mailto:warlbor@hbflavor.com">warlbor@hbflavor.com</a>  
+      </p>
+    </div>
+
+    <div>
+      <div><strong>Monday - Friday:</strong>  9:00 AM to 6:00 PM</div>
+      <div><strong>Saturday - Sunday:</strong> Closed</div>
+    </div>
+  </div>
+
+</footer>
+
+
+
 <style>
   footer {
      @apply 
      grid
-     grid-cols-4
+     grid-cols-3
      px-10 
      py-5
      text-base 
-     text-sky-700 
+     text-sky-700
+     leading-7;
+  }
+     
+  footer .address {
+    
+  }
+  footer .address2{
+    @apply
+    mt-5
+    ;
   }
   footer #logo img{
     @apply 
-    mr-5
-    w-72
+    w-80
     block;
   }
   footer > div {
      @apply flex 
-     flex-col justify-center items-center;
+     flex-col justify-start;
+  }
+  footer .contact{
+    @apply 
+    ml-8
+    leading-10;
   }
   strong {
     @apply contents;
@@ -29,35 +92,4 @@ import Social from './Social.astro';
 
   
 </style>
-
-<footer id="footer" >
-  <div id="logo">
-    <a href="/">
-      <img src="/img/logo/logo-blue.svg" alt="logo" />
-    </a>
-  </div>
-  
-  <div>
-    <strong>Address:</strong> The Kendall, #05-04/06, 50 Science Park Road
-    Science Park II, Singapore 117406
-  </div>
-
-  <div>
-    <p>
-      <strong>Phone:</strong>   <a href="tel:65 6993 3194">warlbor+65 6993 3194</a>
-    </p>
-    <p>
-      <strong>Email:</strong>   <a target="_blank" href="mailto:warlbor@hbflavor.com">warlbor@hbflavor.com</a>  
-    </p>
-  </div>
-
-  <div>
-    <div><strong>Monday - Friday:</strong>  9:00 AM to 6:00 PM</div>
-    <div><strong>Saturday - Sunday:</strong> Closed</div>
-  </div>
-
-  <Social></Social>
-
-</footer>
-
  
