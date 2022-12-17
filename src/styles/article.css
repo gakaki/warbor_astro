@@ -1,13 +1,9 @@
 article {
-    /* font-family: Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-
     @apply p-10
-    font-sans
     ;
 }
 article .title{
     @apply 
-    font-sans 
     text-4xl
     text-sky-700 
     ;

@@ -1,7 +1,7 @@
 ---
 import ImageTag from '../components/ImageTag.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle   = "Research Development";
+const pageTitle   = "Research and Development";
 ---
 <BaseLayout pageTitle={pageTitle}>
 
@@ -12,7 +12,15 @@ const pageTitle   = "Research Development";
     <h2 class="title">{pageTitle}</h2>
 
     <div class="paragraphs">
+    
 
+      <div class="tiles4" class="">
+        <img src="img/research_and_development/1.jpeg" alt="" />
+        <img src="img/research_and_development/2.jpeg" alt="" />
+        <img src="img/research_and_development/3.jpeg" alt="" />
+        <img src="img/research_and_development/4.jpeg" alt="" />
+      </div>
+      
       <p>Dedicated Technological Innovation and Development through Global R&D Platform.</p>
       <p>Warlbor global innovation centre for food and beverages is an integrated multidisciplinary research and development centre leveraging the research ecosystem to enable collaboration and growth of businesses.</p>
       <p>Warlbor Asia Pacific Pte Ltd, is fast emerging as a regional hub for expansion in the Southeast Asian and World markets.</p>
@@ -40,3 +48,17 @@ const pageTitle   = "Research Development";
 
 </BaseLayout>
 
+<style>
+    .tiles4 {
+        @apply
+        h-52
+        my-5 flex 
+        ;
+    }
+    /* .tiles4 img{
+       @apply
+       w-auto
+       h-full
+      ;
+    } */
+</style>
