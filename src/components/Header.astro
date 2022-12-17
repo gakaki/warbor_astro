@@ -105,13 +105,16 @@
   
  
 <style>
+  :root {
+    --main-color-font :#191978;
+  }
   html {
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
     @apply
     text-sm;
-    /* @apply font-sans; */
+    color: var(--main-color-font);
   }
   header {
     @apply 
@@ -120,7 +123,7 @@
     flex 
     /* justify-center */
     /* justify-items-center */
-    /* content-center
+    /* content-centerz
     items-center
     self-center*/
     place-items-center 
@@ -139,11 +142,11 @@
   
   .menu {
     @apply flex h-3 pl-4 space-x-3
-      text-sky-700;
+     ;
   }
   
   .menu  .dropdown {
-    @apply inline-block relative text-sky-700 
+    @apply inline-block relative
     whitespace-nowrap
     ;
   }
@@ -193,4 +196,7 @@
   .menu .dropdown:hover ul {
     @apply block;
   }
+
+
+
 </style>
