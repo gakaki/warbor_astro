@@ -131,17 +131,21 @@
     bg-opacity-50;
   }
 
-  header #header_logo {
-    @apply flex mx-10 w-80;
+  header #header_logo img{
+    @apply flex mx-10 w-56
+    min-w-min
+    ;
   }
-
+  
   .menu {
     @apply flex h-3 pl-4 space-x-3
       text-sky-700;
   }
   
   .menu  .dropdown {
-    @apply inline-block relative text-sky-700 ;
+    @apply inline-block relative text-sky-700 
+    whitespace-nowrap
+    ;
   }
   .menu  .dropdown > a {
       @apply font-semibold

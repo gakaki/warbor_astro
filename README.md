@@ -39,3 +39,11 @@ animation
 
 
  href="https://www.warlbor.com/assets/attachment/COLpellet flyer.pdf" 
+
+
+
+#### 图像的优化
+
+tiny4png flutter windows linux
+
+tinypng > avif 有损
