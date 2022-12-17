@@ -16,8 +16,37 @@ const pageTitle = "Food Service";
 
 
 	<div class="paragraphs">
-
+		
 		<p>Warlbor’s exclusive- “from food for food and authentic taste”, with a very robust collection that’s second to none in the food service sector.</p>
+
+		<div class="food_item">
+			
+			
+			<div>
+				<img src="/img/food_service/food1.jpeg" />
+				<h1>Boba</h1>
+				<p>
+						pararm1
+				</p>
+			</div>
+			
+			<div>
+				<img src="/img/food_service/food2.jpeg" />
+				<h1>Jams</h1>
+				<p>
+					pararm21
+				</p>
+			</div>
+
+			<div>
+				<img src="/img/food_service/food3.jpeg" />
+				<h1>Sauces </h1>
+				<p>
+					pararm3
+				</p>
+			</div>
+
+		</div>
 
 		<div class="flex w-3/4 justify-start">
 
@@ -66,3 +95,29 @@ const pageTitle = "Food Service";
 
 </BaseLayout>
 
+<style>
+
+.food_item{
+	@apply
+	flex;
+}
+.food_item > div{
+	@apply
+	w-1/3
+}
+.food_item > div img{
+	@apply
+	w-11/12
+	h-96;
+}
+.food_item > div h1{
+	@apply
+	mt-5
+	text-center;
+	
+}
+.food_item img{
+	
+	
+}
+</style>

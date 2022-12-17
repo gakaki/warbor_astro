@@ -3,28 +3,8 @@
 
 ### TODO
 
-"social link" lost in footer
-
-"Our Mission" picture jpg
-
-
-
-"food service" lost https://www.warlbor.com/assets/attachment/Designed Brochure - YiFang Food Service Solutions.pdf
-
-"nutritional-ingredients" lost https://www.warlbor.com/assets/attachment/COLpellet flyer.pdf
-
-"food-ingredients" lost https://www.warlbor.com/assets/attachment/Food Ingredient - Vanillin Star Lake.pdf
-
-"food-ingredients" lost title picture <img src="/img/nutritional-ingredients.jpg"  class="" />
-
-"Natural Colours" lost pdf https://www.warlbor.com/assets/attachment/Designed Brochure -Natural Colours.pdf
-
-
-"natural-extracts" lost 4 files
-    https://www.warlbor.com/assets/attachment/Designed Brochure - Jia Pin Jia Wei.pdf
-    https://www.warlbor.com/assets/attachment/Designed Brochure - Milion Natural Extracts.pdf 
-    https://www.warlbor.com/assets/attachment/Flow chart 1.jpeg
-    https://www.warlbor.com/assets/attachment/Flow chart 2.jpg 
+我记得我的首页里面还有谷歌地图的，里面放了新加坡和印度尼西亚的两个点
+谷歌地图js 添加2个点 点击图片和文字跳转
 
 #### Todo tech
 
