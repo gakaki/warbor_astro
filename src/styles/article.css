@@ -1,5 +1,8 @@
 article {
+    /* font-family: Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+
     @apply p-10
+    font-sans
     ;
 }
 article .title{
@@ -11,7 +14,6 @@ article .title{
 }
 article .paragraphs {
     @apply 
-        font-mono
         text-xl
     ;
 }
