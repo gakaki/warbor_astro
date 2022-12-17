@@ -7,7 +7,7 @@ import Social from './Social.astro';
 
   <div id="logo">
     <a href="/">
-      <img src="/img/logo/logo-blue.svg" alt="logo" />
+      <img src="/img/logo/logo-blue-gray.svg" alt="logo" />
     </a>
     <Social></Social>
   </div>
@@ -55,17 +55,17 @@ import Social from './Social.astro';
   footer {
      @apply 
      grid
-     grid-cols-3
      px-10 
      py-5
      text-base 
      text-sky-700
      leading-7;
+
+     grid-template-columns: 25% auto 25%;
+
   }
      
-  footer .address {
-    
-  }
+ 
   footer .address2{
     @apply
     mt-5
@@ -88,7 +88,6 @@ import Social from './Social.astro';
   strong {
     @apply contents;
   }
-
 
   
 </style>
