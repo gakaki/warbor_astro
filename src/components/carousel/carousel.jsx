@@ -9,7 +9,7 @@ class DemoCarousel extends Component {
             <div className=''>
                 <Carousel 
                 showArrows={true} 
-                showStatus={true} 
+                showStatus={false} 
                 showIndicators={true} 
                 infiniteLoop={true} 
                 showThumbs={false} 
